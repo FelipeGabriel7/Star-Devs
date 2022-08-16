@@ -79,7 +79,6 @@ body{
 .button-star{
     margin-top: 3rem;
     display: flex;
-    margin-left: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -103,9 +102,9 @@ body{
 
 .text-api{
     display: flex;
+    margin-top: 3rem;
     gap: 3rem;
     border-radius: 1rem;
-    margin-top:3rem;
     padding: 2rem;
     background: #fff;
 }
@@ -120,9 +119,28 @@ body{
 
 @media(max-width: 768px){
     .text-api{
-        gap: 2rem;
+        margin: 2rem auto;
+        width: 60%;
+        justify-content: center;
         text-align: center;
-        padding: 4rem;
         flex-direction: column;
+    }
+
+    .card{
+        width: 80%;
+    }
+}
+
+@media(max-width: 425px){
+    .text-api{
+        margin: 2rem auto;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
     }
 }
